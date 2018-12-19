@@ -138,6 +138,21 @@ ul{
   display: inline-block;
 }
 
+.block .inline{
+  margin: 10px;
+}
+
+.block .inline > button{
+  background: white;
+  border: none;
+  border-bottom: 1px solid black;
+}
+
+.block .inline > button:active{
+  outline: none;
+  border-bottom: 1px solid gray;
+}
+
 
 
 .current::after{

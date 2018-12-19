@@ -1,5 +1,6 @@
 import * as React from 'react';
 import './App.css';
+import Block from './Block';
 
 export default class IndexComponent extends React.Component{
     render(){
@@ -10,21 +11,20 @@ export default class IndexComponent extends React.Component{
             <div>
                 <p>Upcoming</p>
                 <div className="inline">
-                    <div className="block"></div>
-                    <div className="block"></div>
-                    <div className="block"></div>
-                    <div className="block"></div>
+                    <Block/>
+                    <Block/>
+                    <Block/>
+                    <Block/>
                 </div>
             </div>
 
             <div>
                 <p>Hot</p>
                 <div className="inline">
-                    <div className="block"></div>
-                    <div className="block"></div>
-                    <div className="block"></div>
-                    <div className="block"></div>
-
+                    <Block/>
+                    <Block/>
+                    <Block/>
+                    <Block/>
                 </div>
             </div>
 

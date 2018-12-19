@@ -35,6 +35,8 @@ class App extends Component {
         this.anime.current.classList.remove("small");
         this.anime.current.classList.add("large");
       },100);
+
+      
       
       this.setState({form2: false, id: true,page: 2});
       console.log(this.state.data);
