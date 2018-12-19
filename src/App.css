@@ -1,32 +1,203 @@
-.App {
+.hello{
+  width: 1000px;
+  height:800px;
+  border: 5px outset;
+  background: white;
+  display: flex;
+  margin-left: 8vw;
+}
+
+body{
+  background: white;
+  font-family: sans-serif;
+  
+}
+
+.onboard{
+  background: white;
+}
+
+p{
+  text-align:center;
+}
+
+.small{
+  width: 100px;
+  height: 100px;
+}
+
+.large{
+  width: 300px;
+  height: 300px;
+}
+
+
+.done{
+  position: relative;
+  left: 350px;
+  transition: width 2s, height 2s;
+  background: blueviolet;
+  border-radius: 165px;
+  animation-name: move;
+  animation-duration: 4s;
+}
+
+@keyframes move{
+  from {
+    margin-top:800px;
+  }
+
+  to {
+    margin-top:0px;
+  }
+}
+
+.done::before {
+  content: "\2713";
+  font-size: 280px;
+  color: white;
+  position: relative;
+  left: 43px;
+}
+
+.breadcrumb{
+  width: 100%;
+  
+}
+
+li {
+  list-style: none;
+  display: inline-block;
+}
+
+li:not(:first-child){
+  margin-left: 10px;
+}
+
+li::after{
+  border-right: 1px solid gray;
+  border-bottom: 1px solid gray;
+  width: 25px;
+  height:25px;
+  display:inline-block;
+  transform: rotate(-45deg);
+  content: '';
+  top: 6px;
+  position: relative;
+  left: 12px;
+  background:white;
+  z-index:2;
+}
+
+.animate{
+  animation: hide 4s;
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@keyframes hide{
+  from{
+    display: hidden;
   }
-  to {
-    transform: rotate(360deg);
+
+  to{
+    display: block;
   }
+}
+
+ul{
+  border-bottom: 1px solid lightgrey;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+
+}
+
+.current{
+  background: lightgrey;
+  
+}
+
+.current:not(:first-child){
+  position: relative;
+  left:-10px;
+  padding-left:18px;
+}
+
+.btn{
+  padding: 10px;
+  background: lightgrey;
+  border: 1px;
+  border-radius: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  box-shadow: inset 2px 2px 2px 0px #e2e2e2;
+}
+
+.inline > * {
+  margin-right: 10px;
+  display: inline-block;
+}
+
+
+
+.current::after{
+  background: lightgrey;
+  
+}
+
+.ticker{
+  height: 50px;
+  background: lightgrey;
+}
+
+.block{
+  border:1px solid  lightgrey;
+  width: 300px;
+  height: 200px;
+}
+
+li > p{
+  display: inline-block;
+  margin: 0px;
+  padding: 8px;
+}
+
+form{
+  padding: 20px;
+}
+
+form > * {
+  display: block;
+}
+
+label{
+  margin: 10px;
+}
+
+input{
+  border:none;
+  border-bottom: 1px solid;
+  padding-bottom: 5px;
+  margin: 10px;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+
+
+input:focus{
+  border-bottom: 1px solid blue;
+  outline:none;
+}
+
+.submit{
+  padding: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background: linear-gradient( lightgrey 35%, #7d7777 74%);
+  border: 1px solid grey;
+}
+
+.submit:active{
+  
 }
