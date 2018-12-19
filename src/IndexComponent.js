@@ -8,27 +8,24 @@ export default class IndexComponent extends React.Component{
             <div className="ticker">
 
             </div>
-            <div>
-                <p>Upcoming</p>
+            <nav>
+                <p className="title">SimplePoC</p>
+
+            </nav>
+            <div className="shares">
+                <p>Shares</p>
                 <div className="inline">
-                    <Block/>
-                    <Block/>
-                    <Block/>
-                    <Block/>
+                    <Block large/>
+                    <div>
+                        <Block/>
+                        <Block/>
+                    </div>
                 </div>
             </div>
 
-            <div>
-                <p>Hot</p>
-                <div className="inline">
-                    <Block/>
-                    <Block/>
-                    <Block/>
-                    <Block/>
-                </div>
-            </div>
+            
 
-            <div>
+            <div className="articles">
                 <p>Articles</p>
                 <div className="inline">
                     <div className="block"></div>

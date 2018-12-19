@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import IndexComponent from './IndexComponent';
+import SignIn from './signin';
 
 class Router extends React.Component{
     render(){
@@ -11,6 +12,7 @@ class Router extends React.Component{
         return <div>
             {window.location.pathname == "/onboard" && <App/>}
             {window.location.pathname == "/" && <IndexComponent/>}
+            {window.location.pathname == "/signin" && <SignIn/>}
         </div>
     }
 }

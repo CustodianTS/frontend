@@ -17,9 +17,7 @@ body{
   background: white;
 }
 
-p{
-  text-align:center;
-}
+
 
 .small{
   width: 100px;
@@ -138,6 +136,44 @@ ul{
   display: inline-block;
 }
 
+nav p.title{
+  text-align: left;
+  padding-left: 10px;
+}
+
+nav{
+  border-bottom: 1px solid black;
+}
+
+.shares{
+  margin-left: 20px;
+}
+
+.login {
+  text-align: left;
+}
+
+.formtitle{
+  text-align:center;
+}
+
+.login form{
+  margin-left: 40vw;
+  border: 5px groove lightgrey;
+  width: 300px;
+}
+
+.login form input{
+  margin-left:0px;
+}
+
+
+.large{
+  width: 800px !important;
+  height: 400px !important;
+  vertical-align: top;
+}
+
 .block .inline{
   margin: 10px;
 }
@@ -213,6 +249,10 @@ input:focus{
   border: 1px solid grey;
 }
 
-.submit:active{
-  
+.articles{
+  margin-left: 20px;
+}
+
+.articles p{
+  text-align: center;
 }
